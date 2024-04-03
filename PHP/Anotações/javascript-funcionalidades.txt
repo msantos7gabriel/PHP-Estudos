@@ -1,0 +1,7 @@
+<a href="javascript:history.go(-1)"> Voltar Para a Página Anterior</a> // Volta no Historico da Pagina
+
+<button onclick="javascript:window.location.href='index.html'">&#x2b05; Voltar</button> //  Botão para voltar para o Index (Home)
+
+<button onclick=" javascript:document.location.reload()">&#x1F504; De novo</button> // Recarrega a pagina em que voce está
+
+Desafios\d011\index.php (javascript no exercicio)

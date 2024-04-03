@@ -1,0 +1,39 @@
+Tipos de Strings em PHP 
+
+Double quouted ou aspas duplas - "" (Existe interpretação do conteudo, interpretar, analizar)
+ex: "php \u{1f418}"
+ output: php (Emoji)
+
+Single Quoted ou Aspas Simples - '' (Não existe interpretação do conteúdo, mostrar como está)
+Ex: 'php \u{1f418}' 
+output: php \u{1f418}
+
+Nowdoc
+Heredoc
+
+Strings:
+
+operador de concatenação = . (Juntar as duas Strings)/(Serve tanto para Double quouted quanto para single quouted)
+
+
+Super Globais do php:
+$_GET   Gera um array associativo com todas as variaveis passados por parametro pela URL.
+$_POST  Pega dados de formularios que foram enviados usando o metodo POST.
+$_REQUEST   Pega os dados tanto dos GET quanto dos POST.
+
+Querry String: solicitação de parametros pela URL
+
+$_COOKIES   Contem informações sobre os cookies (pequenas variaveis armazenadas no navegador) que ficam salvos por um periodo de tempo
+
+$_FILES   pega os dados do arquivo enviados por formularios
+
+$_SESSION   Permite que variaveis de seção não sejam perdidas em navegação entre paginas
+
+$_ENV (Enviroment)  variaveis de ambiente do servidor
+
+$_SEVER
+
+$GLOBALS    Variavel global que aponta para todos os arrays globais (Custa muitos recursos)
+
+
+

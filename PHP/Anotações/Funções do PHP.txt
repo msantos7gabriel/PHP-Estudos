@@ -1,0 +1,78 @@
+FUNÇÕES ARITIMETICAS:
+
+Função ABS() mostra o valor absoluto de um valor
+
+Base_convert (valor, base_de_saida, base_desejada) Converte um número decimal para outra base num
+
+funções de arredondamento:
+
+ceil() arredondamento para cima
+
+flor() arredondamento para baixo
+
+round() arredondamento aritimetico // serve para definir a quantidade de numeros apos a virgula tbm
+
+hypot() calcula a hipotenusa  do triangulo retângulo com as coordenadas x e y.
+
+intdiv() operação para q o resultado da divisao seja inteira;
+
+min() e max() valor maximo de uma sequencia entre dois numeros;
+
+pi( ) retorna o valor de pi; ou uma M_PI (constante já declarada)
+
+pow() ao usar a função voce perder a ordem de precedencia.
+
+sin(),cos(),tan()
+
+sqrt() raiz quadrada // não é possivel tirar raiz cubica alternativa: 27 ** (1/3)
+
+rand(int $min, int $max): int // escolhe um numero aleatorio entro os numeros maximos e minimos // 1951 - Linear Congrentional Generator
+mt_rand() verção mais nova e rapida // 1991 - Mersenne Twister
+random_int() gera números aleatorios criptograficamente seguros - mais lento
+
+FUNÇÕES DE FORMATAÇÃO:
+
+number_format($variavel, Quantidade de casas apos a virgula,"Separador de decimal","Separador de Milhar)
+
+
+Obs: Internacionalização monetaria (n funcionou no meu pc, mas no phpsandbox foi)
+dentro da biblioteca intl (internalization PHP); // vem desativada por padrão no php.ini
+
+$variavel = numfmt_create("lingua_Pais", NumberFormatter::CURRENCY);
+echo "". numfmt_format_currency($variavel, $preco , "BRL(sigla da moeda)") . "";
+
+
+Outras funções:
+
+Json_decode(file_get_contents($url),True/False);
+obs:$variavel que está com o link da api// True = Fica dentro de um array | False = Fica dentro de um objeto;
+
+ex:
+        $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\'02-15-2024\'&@dataFinalCotacao=\'02-22-2024\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
+
+        $dados = json_decode(file_get_contents($url), true);
+        var_dump($dados);
+        $cotação = $dados["value"][0]["cotacaoCompra"];
+
+
+
+date();
+    date_default_timezone_set("America/Sao_Paulo");  //Definindo o fuso horário padrão de são pauso
+    echo "Hoje é dia" . date("D/M/Y"); // Mostra a data atual do sistema ( D,d/M,m/Y,y) variam.
+    echo "\t E a hora atual é " . date("G:i:s T"); // G = 24 g = 12 o resto eu n entendi T= mosta a timezone
+    $inicio = date("m-d-Y", strtotime("-7 days")); // String to time é ultilizado para usar uma data de referencia e subitrair ou aumentar dela
+
+Time();
+        time — Retorna o timestamp Unix atual(Retrona a hr do momento)
+        pode ser usado para adicionar tempo 
+        EX: time() + 3600 (segundos); ou seja a hora atual mais uma hora
+
+
+setcookie();
+        Usada para definir cookies do site (importante estar nas primeiras linhas do codigo) 
+        Ex: setcookie("dia-da-semana", "Quinta", time() + 3600 /*1hr*/); 
+
+
+session_start();
+        Inicia uma sessão entre os visitantes(N sei pra que serve ainda)
+
