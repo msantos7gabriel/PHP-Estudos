@@ -1,0 +1,24 @@
+Atributos:
++ NumConta
+# Tipo
+- Dono
+- Saldo
+- Status
+
+métodos :
+
+todos os atributos devem ter seus getters e setters
+
+o constructor deve inicializar o saldo em 0 e a conta fechada
+
+numConta() auto increment 
+tipo () enum ("cc","cp")
+
+se conta corrente(cc) começa com 50
+se conta poupança(cp) começa com 150 
+
+FecharConta() para fechar uma conta não deve ter dinheiro nela e nem deve estar no debito 
+Depositar() o status deve ser verdadeiro
+sacar() o status deve ser verdadeiro tem que ter o saldo para sacar
+pagarMensalidade() toda vez q o pagar mensalidade for chamado o 
+cliente vai pagar 12 reais caso for uma conta corrente se não deve pagar 20 reais para uma conta poupança  
