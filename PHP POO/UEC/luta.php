@@ -79,7 +79,6 @@ class luta
     }
     public function Lutar()
     {
-        var_dump($this->aprovada);
         if ($this->aprovada === true) {
             $this->desafiado->apresentar();
             $this->desafiante->apresentar();
