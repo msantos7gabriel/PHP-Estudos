@@ -67,7 +67,7 @@ class luta
     public function marcarLuta($l1, $l2)
     {
         if ($l1->getCategoria() === $l2->getCategoria() && ($l1 != $l2)) // não pra testar se ele é igual mas sim idêntico por isso o uso dos "==="
-         {
+        {
             $this->aprovada = true;
             $this->desafiado = $l1;
             $this->desafiante = $l2;
@@ -79,7 +79,8 @@ class luta
     }
     public function Lutar()
     {
-        if ($this->aprovada = true) {
+        var_dump($this->aprovada);
+        if ($this->aprovada === true) {
             $this->desafiado->apresentar();
             $this->desafiante->apresentar();
             $vencedor = random_int(0, 2);

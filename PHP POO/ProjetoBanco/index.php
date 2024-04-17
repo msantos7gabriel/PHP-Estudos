@@ -1,48 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ULTIMATE EMOJI COMBAT</title>
 </head>
 
 <body>
-    <pre>
+    <PRE>
+<?php
 
-        <?php
+require_once("lutador.php");
+require_once("luta.php");
 
-        require_once('contaBanco.php');
+$l = array();
 
-        $p1 = new contaBanco(); // Jubileu
-        $p2 = new contaBanco(); // Creusa
+$l[0] = new Lutador("Pretty Boy", "França", 31, 1.75, 68.9, 11, 3, 1);
+$l[1] = new Lutador("Putscript", "Brasil", 29, 1.68, 57.8, 14, 2, 3);
+$l[2] = new Lutador("Snapshadow", "EUA", 35, 1.65, 80.9, 12, 2, 1);
+$l[3] = new Lutador("Dead Code", "Austrália", 28, 1.93, 81.6, 13, 0, 2);
+$l[4] = new Lutador("Ufocobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3);
+$l[5] = new Lutador("Nerdaard", "EUA", 30, 1.81, 105.7, 12, 2, 4);
+$l[1]->apresentar();
+$l[1]->status();
 
-        $p1->abrirConta("cc");
-        $p1->setDono("Jubileu");
-        $p1->setNunBanco(1111);
-        $p1->depositar(300);
+$ufc = new luta;
+$ufc->marcarLuta($l[0], $l[0]);
+$ufc->Lutar();
 
-        $p2->abrirConta("cp");
-        $p2->setDono("Creusa");
-        $p2->setNunBanco(2222);
-        $p2->depositar(500);
+?>
 
-        $p2->sacar(1000);
- 
-        $p1->pagarMensal();
-        $p2->pagarMensal();
-        
-        $p1->sacar(338);
-        $p2->sacar(630);
-        
-        $p1->fecharConta();
-        $p2->fecharConta();
-
-        print_r($p1);
-        echo "<br>";
-        print_r($p2);
-        ?>
-</pre>
+</PRE>
 </body>
 
 </html>
