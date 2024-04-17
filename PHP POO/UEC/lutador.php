@@ -169,7 +169,7 @@ class lutador
         echo "Tem " . $this->getIdade() . " Anos e pesa " . $this->getPeso() . "KG";
         echo " " . $this->getAltura() . "M de altura";
         echo "<br>Ele Tem " . $this->getVitorias() . " Vitorias ";
-        echo  $this->getDerrotas() . " Derrotas e " . $this->getEmpates() . "Empates</p>";
+        echo  $this->getDerrotas() . " Derrotas e " . $this->getEmpates() . " Empates</p>";
         echo "<p>-----------------------------------</p>";
     }
     public function status()
@@ -181,74 +181,5 @@ class lutador
         echo "<p>" . $this->getDerrotas() . " Derrotas</p>";
         echo "<p>" . $this->getEmpates() . " Empates</p>";
         echo "<p>-----------------------------------</p>";
-    }
-}
-
-class luta
-{
-    private $desafio;
-    private $desafiante;
-    private $rounds;
-    private $aprovada;
-
-    //Método Construtor
-
-    //métodos especiais
-
-    public function getDesafio()
-    {
-        return $this->desafio;
-    }
-
-    public function setDesafio($desafio)
-    {
-        $this->desafio = $desafio;
-
-        return $this;
-    }
-
-    public function getDesafiante()
-    {
-        return $this->desafiante;
-    }
-
-    public function setDesafiante($desafiante)
-    {
-        $this->desafiante = $desafiante;
-
-        return $this;
-    }
-
-    public function getRounds()
-    {
-        return $this->rounds;
-    }
-
-    public function setRounds($rounds)
-    {
-        $this->rounds = $rounds;
-
-        return $this;
-    }
-
-    public function getAprovada()
-    {
-        return $this->aprovada;
-    }
-
-    public function setAprovada($aprovada)
-    {
-        $this->aprovada = $aprovada;
-
-        return $this;
-    }
-
-    // métodos
-
-    public function marcarLuta()
-    {
-    }
-    public function Lutar()
-    {
     }
 }

@@ -12,6 +12,7 @@
 <?php
 
 require_once("lutador.php");
+require_once("luta.php");
 
 $l = array();
 
@@ -24,6 +25,13 @@ $l[5] = new Lutador("Nerdaard", "EUA", 30, 1.81, 105.7, 12, 2, 4);
 $l[1]->apresentar();
 $l[1]->status();
 
+$ufc = new luta;
+$ufc->marcarLuta($l[0], $l[1]);
+$ufc->Lutar();
+
+
+$ufc->marcarLuta($l[5], $l[4]);
+$ufc->Lutar();
 ?>
 
 </PRE>
