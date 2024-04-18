@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -26,12 +26,9 @@ $l[1]->apresentar();
 $l[1]->status();
 
 $ufc = new luta;
-$ufc->marcarLuta($l[0], $l[1]);
+$ufc->marcarLuta($l[0], $l[5]);
 $ufc->Lutar();
 
-
-$ufc->marcarLuta($l[5], $l[4]);
-$ufc->Lutar();
 ?>
 
 </PRE>

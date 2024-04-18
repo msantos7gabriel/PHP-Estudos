@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
     <title>Exercicio PHP</title>
 </head>
 
@@ -21,7 +21,8 @@
         <h1>Calculando sua idade</h1>
         <form action<?= $_SERVER['PHP_SELF'] ?>" method=" post">
             <label for="nascimento">Em que ano você nasceu? </label>
-            <input type="number" name="nascimento" id="nascimento" min="1900" max="<?= ($ano_atual - 1) ?>" required value="<?= $nascimento ?>">
+            <input type="number" name="nascimento" id="nascimento" min="1900" max="<?= ($ano_atual - 1) ?>" required
+                value="<?= $nascimento ?>">
             <label for="futuro">Quesa ber sua idaded em que ano? (atualmente estamos em <?= $ano_atual ?>)</label>
             <input type="number" name="futuro" id="futuro" required min="1900" value="<?= $futuro ?>">
             <input type="submit" value="Qual será minha idade?">
