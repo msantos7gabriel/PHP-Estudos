@@ -1,5 +1,5 @@
 # PHP Curso em Video
- 
-- [ ] PHP Basico
+
+* - [ ] PHP Basico
 - [ x ] PHP Moderno
-- [ ] PHP POO
+* - [ ] PHP POO
