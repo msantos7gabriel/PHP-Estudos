@@ -34,9 +34,6 @@
         ?>
         <p>O produto que custava R$ <?= $valor ?>, com <strong> <?= $reajuste ?>% de aumento </strong> vai passar a
             custar <strong>R$ <?= $novo ?></strong> a partir de agora.</p>
-
-
-
     </section>
     <script>
     mudaValor()
