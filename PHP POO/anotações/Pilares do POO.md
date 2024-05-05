@@ -58,3 +58,15 @@
   - Método Final Não pode ser sobrescrito pelas duas Sub-classes. Obrigatoriamente herdado. (não pode gerar uma especialização desse método)
 
 ### Polimorfismo
+
+- Poli = Muitas / Morfo = Formas
+- Permite que um mesmo nome represente vários comportamentos diferentes
+- Assinatura do Método
+  - Quantidade e os tipos dos parâmetros
+- Tipos de Polimorfismo (Possuem 4)
+
+  1. Sobreposição
+
+     - Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
+
+  1. Sobrecarga
