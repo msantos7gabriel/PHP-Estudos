@@ -11,8 +11,8 @@
 <body>
     <?php
     // CAPTURANDO OS DADOS DO FORMULARIO RETROALIMENTADO  
-    $valor1 = $_GET['v1'] ?? 0;
-    $valor2 = $_GET['v2'] ?? 0;
+    $valor1 = $_GET['v1'];
+    $valor2 = $_GET['v2'];
     $resultado = $valor1 + $valor2;
     ?>
     <main>

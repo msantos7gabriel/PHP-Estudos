@@ -70,3 +70,5 @@
      - Acontece quando substituímos um método de uma superclasse na sua subclasse, usando a mesma assinatura.
 
   1. Sobrecarga
+
+  - Polimorfismo de sobrecarga permite que um método de determinado nome tenha comportamentos distintos, em função de diferentes parâmetros que ele recebe.
