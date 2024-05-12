@@ -2,4 +2,4 @@
 
 * - [ ] PHP Basico
 * - [x] PHP Moderno
-* - [ ] PHP POO
+* - [x] PHP POO
