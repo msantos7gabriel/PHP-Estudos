@@ -1,16 +1,31 @@
 <?php
 
-function gerarNumeros($inicio, $fim)
+function gerarNumeros($inicio = 10, $fim = 20)
 {
     $lista = [];
-    for ($i = $inicio; $i <= $fim; $i++) {
-        array_push($lista, $i);
+    if ($fim <= $inicio) {
+        echo "Não é possível procurar";
+    } else {
+        for ($i = $inicio; $i <= $fim; $i++) {
+            array_push($lista, $i);
+        }
+        return $lista;
     }
-    return $lista;
 }
 
-for ($i = 0; $i < 5; $i++) {
-    $inicio = random_int(0, 10);
-    $fim = random_int(10, 20);
-    $numeros = gerarNumeros($inicio, $fim);
+$var[] = gerarNumeros(1, 5);
+$var[] = gerarNumeros(/*10, 12*/);
+$var[] = gerarNumeros(20, 22);
+
+foreach ($var as $num) {
+    echo var_dump($num) . "<br>";
 }
+
+
+
+function formatar_preco($preco)
+{
+    return "R$ " . number_format($preco, 2, ",", ".");
+}
+
+echo "O Preço é: <b>" . formatar_preco(4.35);
