@@ -1,7 +1,6 @@
 # PHP POO
 
 - Objeto
-
   - Coisa material ou abstrata de pode ser percebida pelos sentidos e descrito por meio das suas **características**, **comportamentos** e **estado atual**.
 
 - Classe
@@ -19,7 +18,7 @@
       - Rabiscar
       - Destampar
       - Tampar
-        - representado como nome_do_objeto.metodo()
+        - representado como nome_do_objeto.método()
     - Como eu estou agora? (Estado)
 - Instanciar
   - Pegar uma classe e gerar um objeto através dela
